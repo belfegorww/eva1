@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        /* --- Estilos Generales --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f4fdf4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2b7a0b;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1e5307;
+        }
+
+        h1, h2, h3 {
+            color: #2b7a0b;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        /* --- Encabezado --- */
+        header {
+            background-color: #d7f2d7;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* --- Secciones --- */
+        section {
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2b7a0b;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1e5307;
+        }
+
+        /* --- Pie de página --- */
+        footer {
+            background-color: #d7f2d7;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acerca_de.html">Acerca de</a>
+            <a href="como_aportar.html">Como Aportar</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h2>¡Nos encantaría saber de ti!</h2>
+        <p>Si tienes alguna pregunta o comentario, por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.</p>
+
+        <div class="form-container">
+            <form action="mailto:tuemail@dominio.com" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="El motivo de tu contacto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reciclaje Sostenible. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

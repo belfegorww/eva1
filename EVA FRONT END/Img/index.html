@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reciclar es Vivir</title>
+  <style>
+    /* --- Estilos Generales --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4fdf4;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2b7a0b;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #1e5307;
+    }
+
+    h1, h2, h3 {
+      color: #2b7a0b;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    /* --- Encabezado --- */
+    header {
+      background-color: #d7f2d7;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    /* --- Secciones --- */
+    section {
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .gallery img {
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Botones --- */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2b7a0b;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1e5307;
+    }
+
+    /* --- Formulario --- */
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* --- Pie de página --- */
+    footer {
+      background-color: #d7f2d7;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Reciclar es Vivir</h1>
+    <p>Un sitio dedicado al cuidado del planeta</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="acerca_de.html">Acerca de</a>
+      <a href="como_aportar.html">Como Aportar</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Página de Inicio -->
+  <section id="inicio">
+    <h2>¿Por qué reciclar?</h2>
+    <div class="grid grid-2">
+        <div>
+            <p>Reciclar reduce la contaminación, ahorra energía y preserva recursos naturales. Separar los residuos correctamente puede hacer una gran diferencia para el medio ambiente. Cuando reciclamos, evitamos que materiales como plástico, papel y vidrio lleguen a los vertederos, lo que ayuda a disminuir la contaminación del aire, agua y suelo.</p>
+            
+            <p>Además, el reciclaje reduce la necesidad de extraer recursos naturales, lo que significa menos deforestación, minería y consumo de energía. Reciclar productos como el vidrio y el aluminio también ahorra una cantidad significativa de energía en comparación con la producción de estos materiales desde cero.</p>
+            
+            <p>El reciclaje también juega un papel fundamental en la lucha contra el cambio climático. Al reducir la cantidad de desechos que terminan en los vertederos, evitamos la emisión de gases de efecto invernadero, como el metano, que se genera cuando los desechos orgánicos se descomponen sin oxígeno. Al reciclar, también estamos contribuyendo a una economía más circular, donde los productos y materiales se reutilizan y se mantienen en circulación el mayor tiempo posible.</p>
+            
+            <p>Reciclar no solo beneficia al medio ambiente, sino también a la sociedad y la economía. La industria del reciclaje crea empleo y fomenta la innovación en nuevos productos y procesos sostenibles. Es una forma sencilla de contribuir a un futuro más limpio y sostenible para las próximas generaciones.</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80" alt="Persona reciclando">
+        </div>
+    </div>
+</section>
+
+  <!-- Acerca de -->
+  <section id="acerca">
+    <h2>Acerca del reciclaje</h2>
+    <p>El reciclaje es el proceso mediante el cual se convierten los residuos en nuevos productos o en materia prima para su posterior utilización. Implica la recolección, clasificación y procesamiento de materiales como papel, vidrio, plásticos y metales.</p>
+    <ul>
+      <li><strong>Papel y cartón:</strong> Se usan para hacer nuevos productos de papel.</li>
+      <li><strong>Vidrio:</strong> Se puede reciclar infinitamente sin perder calidad.</li>
+      <li><strong>Plástico:</strong> Debe separarse por tipo para ser reutilizado correctamente.</li>
+    </ul>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria">
+    <h2>Galería de reciclaje</h2>
+    <div class="gallery grid grid-2">
+      <img src="https://th.bing.com/th/id/OIP.MfUYrqkXKDaDowATDXDALwHaDu?w=326&h=176&c=7&r=0&o=5&pid=1.7" alt="Contenedores de reciclaje">
+      <img src="https://thelogisticsworld.com/wp-content/uploads/2021/02/envases-de-botellas-para-reciclar.jpg" alt="Botellas recicladas">
+      <img src="https://th.bing.com/th/id/OIP.dlAJ6j_XUT5q2fePBCgEVQHaEG?w=323&h=180&c=7&r=0&o=5&pid=1.7" alt="Reciclaje de papel">
+      <img src="https://th.bing.com/th/id/OIP.RuKIJPdpLF-q4uMqQshdAgHaE7?rs=1&pid=ImgDetMain" alt="Clasificación de basura">
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Reciclar es Vivir - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* --- Estilos Generales --- */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+  
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        background-color: #f4fdf4;
+        color: #333;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #2b7a0b;
+        transition: color 0.3s ease;
+      }
+  
+      a:hover {
+        color: #1e5307;
+      }
+  
+      h1, h2, h3 {
+        color: #2b7a0b;
+      }
+  
+      img {
+        max-width: 100%;
+        border-radius: 12px;
+      }
+  
+      /* --- Encabezado --- */
+      header {
+        background-color: #d7f2d7;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      nav {
+        margin-top: 10px;
+      }
+  
+      nav a {
+        margin: 0 15px;
+        font-weight: bold;
+      }
+  
+      /* --- Secciones --- */
+      section {
+        padding: 40px 20px;
+      }
+  
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+  
+      .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+  
+      .gallery img {
+        transition: transform 0.3s ease;
+      }
+  
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+  
+      /* --- Botones --- */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #2b7a0b;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+      }
+  
+      .btn:hover {
+        background-color: #1e5307;
+      }
+  
+      /* --- Formulario --- */
+      form {
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      input, textarea {
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+      }
+  
+      /* --- Pie de página --- */
+      footer {
+        background-color: #d7f2d7;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+  
+      /* --- Responsive --- */
+      @media (max-width: 600px) {
+        nav a {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reciclaje: Un Paso Hacia un Mundo Más Sostenible</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acerca_de.html">Acerca de</a>
+            <a href="como_aportar.html">Como Aportar</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="acerca">
+        <h2>Acerca del Reciclaje</h2>
+        <p>El reciclaje es el proceso mediante el cual se convierten los residuos en nuevos productos o en materia prima para su posterior utilización. Implica la recolección, clasificación y procesamiento de materiales como papel, vidrio, plásticos y metales.</p>
+        <ul>
+          <li><strong>Papel y cartón:</strong> Se usan para hacer nuevos productos de papel.</li>
+          <li><strong>Vidrio:</strong> Se puede reciclar infinitamente sin perder calidad.</li>
+          <li><strong>Plástico:</strong> Debe separarse por tipo para ser reutilizado correctamente.</li>
+        </ul>
+    </section>
+
+    <section id="tipos">
+        <h2>Tipos de Reciclaje</h2>
+        <p>Existen varios tipos de reciclaje que se aplican a distintos materiales. Aquí te mostramos algunos ejemplos:</p>
+        <div class="grid grid-2">
+            <div>
+                <h3>Reciclaje de Plástico</h3>
+                <p>El plástico es uno de los materiales más problemáticos para el medio ambiente, pero puede reciclarse y reutilizarse en nuevos productos como ropa, muebles y más.</p>
+                <img src="plastico.jpg" width="600" height="300" alt="Reciclaje de Plástico">
+            </div>
+            <div>
+                <h3>Reciclaje de Vidrio</h3>
+                <p>El vidrio puede reciclarse infinitamente sin perder calidad. Se utiliza para fabricar nuevos envases, frascos y más productos de vidrio.</p>
+                <img src="vidrio.jpg" width="600" height="300" alt="Reciclaje de Vidrio">
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <h2>Beneficios del Reciclaje</h2>
+        <p>El reciclaje tiene múltiples beneficios tanto para el medio ambiente como para la economía. Algunos de estos beneficios incluyen:</p>
+        <ul>
+            <li><strong>Reducción de residuos:</strong> Disminuye la cantidad de basura que llega a los vertederos.</li>
+            <li><strong>Conservación de recursos naturales:</strong> Reduce la necesidad de extraer recursos naturales como minerales, petróleo y árboles.</li>
+            <li><strong>Generación de empleo:</strong> La industria del reciclaje crea trabajos en la recolección, clasificación y procesamiento de materiales reciclables.</li>
+        </ul>
+        <div class="grid grid-2">
+            <div>
+                <h3>Reciclaje en Acción</h3>
+                <p>Además de los beneficios ecológicos, el reciclaje también genera un impacto positivo en la economía local y global.</p>
+                <img src="economia.jpg" alt="Reciclaje en Acción">
+            </div>
+            <div>
+                <h3>Reducción de la Contaminación</h3>
+                <p>Reciclar ayuda a reducir la contaminación del aire, agua y suelo, mejorando la salud ambiental de nuestro planeta.</p>
+                <img src="medioambiente.webp" alt="Reducción de la Contaminación">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reciclaje Sostenible. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
