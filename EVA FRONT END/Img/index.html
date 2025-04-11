@@ -5,123 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reciclar es Vivir</title>
   <style>
-    /* --- Estilos Generales --- */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    /* --- Reset --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background-color: #f4fdf4;
-      color: #333;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fdf4;
+  color: #2f3e2f;
+  line-height: 1.7;
+}
 
-    a {
-      text-decoration: none;
-      color: #2b7a0b;
-      transition: color 0.3s ease;
-    }
+/* --- Encabezado --- */
+header {
+  background: linear-gradient(to right, #b5e7a0, #86c88d);
+  padding: 40px 20px;
+  text-align: center;
+  color: #1e5307;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
-    a:hover {
-      color: #1e5307;
-    }
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-    h1, h2, h3 {
-      color: #2b7a0b;
-    }
+nav {
+  margin-top: 15px;
+}
 
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: #245e0d;
+  font-size: 1rem;
+}
 
-    /* --- Encabezado --- */
-    header {
-      background-color: #d7f2d7;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+nav a:hover {
+  color: #103d03;
+}
 
-    nav {
-      margin-top: 10px;
-    }
+/* --- Secciones --- */
+section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
 
-    nav a {
-      margin: 0 15px;
-      font-weight: bold;
-    }
+section:nth-of-type(even) {
+  background-color: #eef9ee;
+}
 
-    /* --- Secciones --- */
-    section {
-      padding: 40px 20px;
-    }
+h2 {
+  text-align: center;
+  color: #2b7a0b;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
 
-    .grid {
-      display: grid;
-      gap: 20px;
-    }
+/* --- Grid Layout --- */
+.grid {
+  display: grid;
+  gap: 30px;
+}
 
-    .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
 
-    .gallery img {
-      transition: transform 0.3s ease;
-    }
+/* --- Cards --- */
+.grid-2 > div {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+/* --- Galería --- */
+.gallery img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-    /* --- Botones --- */
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #2b7a0b;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
+.gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
 
-    .btn:hover {
-      background-color: #1e5307;
-    }
+/* --- Botones --- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #2b7a0b;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    /* --- Formulario --- */
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
+.btn:hover {
+  background-color: #1e5307;
+}
 
-    input, textarea {
-      padding: 10px;
-      margin: 10px 0;
-      border: 2px solid #ccc;
-      border-radius: 6px;
-    }
+/* --- Formulario --- */
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f2fff2;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
 
-    /* --- Pie de página --- */
-    footer {
-      background-color: #d7f2d7;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
+input, textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #bfe0bf;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
 
-    /* --- Responsive --- */
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
+/* --- Footer --- */
+footer {
+  background-color: #b5e7a0;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #2f3e2f;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer .socials a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #2b7a0b;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #103d03;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -172,7 +220,6 @@
     <h2>Galería de reciclaje</h2>
     <div class="gallery grid grid-2">
       <img src="https://th.bing.com/th/id/OIP.MfUYrqkXKDaDowATDXDALwHaDu?w=326&h=176&c=7&r=0&o=5&pid=1.7" alt="Contenedores de reciclaje">
-      <img src="https://thelogisticsworld.com/wp-content/uploads/2021/02/envases-de-botellas-para-reciclar.jpg" alt="Botellas recicladas">
       <img src="https://th.bing.com/th/id/OIP.dlAJ6j_XUT5q2fePBCgEVQHaEG?w=323&h=180&c=7&r=0&o=5&pid=1.7" alt="Reciclaje de papel">
       <img src="https://th.bing.com/th/id/OIP.RuKIJPdpLF-q4uMqQshdAgHaE7?rs=1&pid=ImgDetMain" alt="Clasificación de basura">
     </div>
