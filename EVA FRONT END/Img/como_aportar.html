@@ -4,8 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cómo Aportar al Reciclaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* --- Estilos Generales --- */
+    :root {
+      --primary: #2b7a0b;
+      --secondary: #d7f2d7;
+      --bg: #f4fdf4;
+      --text: #333;
+      --radius: 10px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -13,176 +22,189 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      background-color: #f4fdf4;
-      color: #333;
     }
 
-    a {
-      text-decoration: none;
-      color: #2b7a0b;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #1e5307;
-    }
-
-    h1, h2, h3 {
-      color: #2b7a0b;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-
-    /* --- Encabezado --- */
     header {
-      background-color: #d7f2d7;
-      padding: 20px;
+      background-color: var(--secondary);
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: var(--primary);
+      margin-bottom: 10px;
     }
 
     nav {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     nav a {
       margin: 0 15px;
-      font-weight: bold;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    /* --- Secciones --- */
+    nav a:hover {
+      color: #1e5307;
+    }
+
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #1e5307;
     }
 
     .grid {
       display: grid;
-      gap: 20px;
+      gap: 30px;
     }
 
     .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-    .gallery img {
+    .grid-2 > div {
+      background: #fff;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
       transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    .grid-2 > div:hover {
+      transform: translateY(-5px);
     }
 
-    /* --- Botones --- */
+    ul li {
+      margin-bottom: 12px;
+    }
+
     .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #2b7a0b;
+      background-color: var(--primary);
       color: #fff;
+      padding: 12px 25px;
       border: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 15px;
     }
 
     .btn:hover {
       background-color: #1e5307;
     }
 
-    /* --- Formulario --- */
     form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
       max-width: 600px;
       margin: auto;
-      display: flex;
-      flex-direction: column;
     }
 
     input, textarea {
-      padding: 10px;
+      padding: 12px;
       margin: 10px 0;
-      border: 2px solid #ccc;
-      border-radius: 6px;
+      border: 1.5px solid #ccc;
+      border-radius: var(--radius);
+      width: 100%;
+      font-size: 1em;
     }
 
-    /* --- Pie de página --- */
     footer {
-      background-color: #d7f2d7;
+      background-color: var(--secondary);
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 14px;
+      margin-top: 40px;
     }
 
-    /* --- Responsive --- */
     @media (max-width: 600px) {
       nav a {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
+      }
+
+      header h1 {
+        font-size: 2em;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Encabezado -->
   <header>
     <h1>Cómo Aportar al Reciclaje</h1>
     <p>Tu contribución al reciclaje cuenta</p>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="acerca_de.html">Acerca de</a>
-      <a href="como_aportar.html">Como Aportar</a>
+      <a href="como_aportar.html">Cómo Aportar</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <!-- Introducción -->
   <section id="introduccion">
     <h2>¿Por qué es importante el reciclaje?</h2>
     <p>Reciclar es un proceso clave para conservar nuestros recursos naturales, reducir la contaminación y mejorar la calidad de vida de todos. Al separar los residuos correctamente y darles una segunda vida, podemos marcar una gran diferencia en el mundo.</p>
   </section>
 
-  <!-- Consejos para reciclar -->
   <section id="consejos">
     <h2>Consejos para Reciclar en Casa</h2>
     <div class="grid grid-2">
       <div>
         <h3>1. Separa los Residuos</h3>
-        <p>Crea diferentes contenedores para los materiales reciclables como papel, plástico, vidrio, y metal. Asegúrate de separarlos para que puedan ser procesados de manera adecuada.</p>
+        <p>Crea diferentes contenedores para los materiales reciclables como papel, plástico, vidrio, y metal.</p>
       </div>
       <div>
         <h3>2. Limpia los Envases</h3>
-        <p>Asegúrate de enjuagar los envases antes de reciclarlos. Los restos de comida pueden contaminar otros materiales reciclables y hacer que no sean aptos para el proceso.</p>
+        <p>Enjuaga los envases antes de reciclarlos para evitar la contaminación de otros materiales.</p>
       </div>
       <div>
         <h3>3. Evita el Plástico de Un Solo Uso</h3>
-        <p>Utiliza alternativas reutilizables, como bolsas de tela y botellas metálicas o de vidrio, para reducir el consumo de plásticos de un solo uso.</p>
+        <p>Utiliza bolsas de tela, botellas reutilizables y otros productos duraderos.</p>
       </div>
       <div>
-        <h3>4. Infórmate sobre los Centros de Reciclaje Locales</h3>
-        <p>Investiga en tu comunidad sobre dónde puedes llevar los materiales reciclables. Los centros de reciclaje locales te ayudarán a asegurar que tus residuos lleguen al lugar adecuado.</p>
+        <h3>4. Infórmate sobre los Centros Locales</h3>
+        <p>Consulta en tu comunidad dónde puedes llevar tus reciclables.</p>
       </div>
     </div>
-
   </section>
 
-  <!-- Beneficios del Reciclaje -->
   <section id="beneficios">
     <h2>Beneficios del Reciclaje</h2>
     <ul>
-      <li><strong>Reduce la contaminación:</strong> Reciclar ayuda a reducir la cantidad de residuos que terminan en vertederos y a disminuir la contaminación del aire y del agua.</li>
-      <li><strong>Ahorra energía:</strong> Producir productos reciclados usa menos energía que fabricar nuevos productos desde cero.</li>
-      <li><strong>Conserva los recursos naturales:</strong> El reciclaje disminuye la necesidad de extraer nuevos recursos de la naturaleza.</li>
-      <li><strong>Genera empleo:</strong> La industria del reciclaje genera empleos en la recolección, clasificación y procesamiento de materiales reciclables.</li>
+      <li><strong>Reduce la contaminación:</strong> Menos residuos en vertederos y menos contaminación ambiental.</li>
+      <li><strong>Ahorra energía:</strong> El reciclaje consume menos energía que la producción desde cero.</li>
+      <li><strong>Conserva recursos naturales:</strong> Reduce la necesidad de extraer nuevos materiales.</li>
+      <li><strong>Genera empleo:</strong> Crea oportunidades en la industria del reciclaje.</li>
     </ul>
   </section>
 
-  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 Reciclar es Vivir - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
-
-
